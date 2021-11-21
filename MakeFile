@@ -1,8 +1,8 @@
 FLAGS= -g -Wall
 
+all: connections
 
-
-output: main.o my_mat.o
+connections: main.o my_mat.o
 	gcc $(FLAGS) main.o my_mat.o -o output
 
 main.o: main.c my_mat.h
@@ -12,7 +12,7 @@ my_mat.o: my_mat.c my_mat.h
 	gcc $(FLAGS) -c my_mat.c
 
 
-.PHONY: clean
+.PHONY: clean all
 
 clean:
 	rm -f output *.o

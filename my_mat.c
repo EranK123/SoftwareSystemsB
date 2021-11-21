@@ -6,6 +6,14 @@ int main(){
 return 0;   
 }
 
+int findMin(int a, int b){
+   if (a < b)
+   {
+       return a;
+   }
+    return b;
+}
+
 void getMat(int matrix[n][n])
 {
     for(int i=0;i< n;i++)
@@ -17,16 +25,8 @@ void getMat(int matrix[n][n])
         }
     }
 }
- 
-    printf("\nMatrix is :\n");
-    for(int i=0;i< n;i++)
-    {
-        for(int j=0;j< n;j++)
-        {
-            printf("%d\t",matrix[i][j]);
-        }
-        printf("\n");  
-    }
+    
+   
 
   void route(int m[n][n]){
         int i,j;
@@ -44,7 +44,7 @@ void buildFastestRoutes(int m[n][n]){
 for (int k = 0; k < n; k++){
         for (int i = 0; i < n; i++){
             for (int j = 0; j < n; j++){
-                m[i][j] = min(m[i][j], m[i][k] + m[k][j]);
+                m[i][j] = findMin(m[i][j], m[i][k] + m[k][j]);
             }
         }
     }
@@ -62,11 +62,6 @@ for (int k = 0; k < n; k++){
         }
         printf("-1");
 }
-int min(int a, int b){
-   if (a < b)
-   {
-       return a;
-   }
-    return b;
-}
+
+
 

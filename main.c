@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <my_mat.h>
+#include "my_mat.h"
 #define n 10
 
 int main()
@@ -28,6 +28,5 @@ int main()
         i = 0;
     }
 }
-    
     return 0;
 }

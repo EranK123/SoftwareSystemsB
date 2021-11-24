@@ -18,4 +18,4 @@ libmy_mat.so: my_mat.o
 .PHONY: clean all
 
 clean:
-	rm -f output *.o
+	rm -f connections *.o *.so

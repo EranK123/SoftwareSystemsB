@@ -4,8 +4,7 @@
 #define MaxValue 10000000
 
 int m[n][n];
-// int arr[n][n];
-// int arr2[n][n];
+
 
 int findMin(int a, int b){
    if (a < b){
@@ -41,7 +40,6 @@ void getMat(){
     }
 }
 void route(){
-    // int i,j,k,x;
     int i, j;
     int arr[n][n];
     scanf("%d %d" , &i, &j);
@@ -77,6 +75,5 @@ void buildFastestRoutes(int y, int z){
   void fastestRoute(){
         int i,j;
         scanf("%d %d" , &i, &j);
-        // scanf("%d" , &j);
         buildFastestRoutes(i, j);
 }

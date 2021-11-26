@@ -22,7 +22,6 @@ int main(){
     if (x == 'D'){
         i = 0;
     }
-    // scanf("%c", &x);
     }
     return 0;
 }

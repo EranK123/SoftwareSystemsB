@@ -1,12 +1,8 @@
-void getMat(int m[][10]);
-void route(int m[][10]);
-void fastestRoute(int m[][10]);
+#ifndef _MY_MAT_H_
+#define _MY_MAT_H_
 
+void getMat();
+void route();
+void fastestRoute();
 
-
-
-
-
-
-
-
+#endif

@@ -1,32 +1,28 @@
 #include <stdio.h>
+#include <math.h>
 #include "my_mat.h"
-#define n 10
 
-int main()
-{
+
+int main(){
+    
     char x;
-    int i = 1;
-    int m[n][n];
-    while (i != 0)
-    {
-    scanf("%c", &x);
-    if (x == 'A')
-    {
-        
-        getMat(m);
+    int i=1;
+    
+    while (i != 0){
+        scanf("%c", &x);
+     if (x == 'A'){
+        getMat();
+    }   
+    if (x == 'B'){
+        route();
     }
-    if (x == 'B')
-    {
-        route(m);
+     if (x == 'C'){
+        fastestRoute();
     }
-    if (x == 'C')
-    {
-        fastestRoute(m);
-    }
-    if(x == 'D')
-    {
+    if (x == 'D'){
         i = 0;
     }
-}
+    // scanf("%c", &x);
+    }
     return 0;
 }
